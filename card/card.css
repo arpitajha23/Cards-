@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.count {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.count .twn {
+    position: relative;
+    max-width: 320px;
+    height: 290px;
+    background: #fff;
+    margin: 10px 30px;
+    padding: 20px 15px;
+    display: inline;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.count .twn:hover {
+    height: 560px;
+}
+
+.count .twn .imgstyle {
+    position: relative;
+    width: 290px;
+    height: 260px;
+    top: -50px;
+    left: 9px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.count .twn .imgstyle img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.count .twn .data {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.count .twn:hover .data {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.count .twn .data a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
